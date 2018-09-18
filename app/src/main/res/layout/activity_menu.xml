@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RadioGroup
+            android:id="@+id/groupRadio1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/groupRadio2"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="10px">
+
+            <RadioButton
+                android:id="@+id/rdButtonEndTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Todos os Endereços"
+                android:textColor="#FF0000" />
+
+            <RadioButton
+                android:id="@+id/rdButtonEndEsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço Específico"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/txtOpEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:singleLine="true">
+            </EditText>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/groupRadio2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupRadio1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="10px">
+
+            <RadioButton
+                android:id="@+id/rdButtonEspTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Todas as Especialidades"
+                android:textColor="#FF0000" />
+
+            <RadioButton
+                android:id="@+id/rdButtonEsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especialidade Específica"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/txtOpEsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:singleLine="true"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/groupRadio3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/groupRadio2"
+            android:layout_below="@+id/groupRadio2"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="10px">
+
+            <RadioButton
+                android:id="@+id/rdButtonMedTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Todos os Médicos"
+                android:textColor="#FF0000" />
+
+            <RadioButton
+                android:id="@+id/rdButtonMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médico Específico"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/txtOpMed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:singleLine="true"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/groupRadio4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/groupRadio3"
+            android:layout_below="@+id/groupRadio3"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="10px">
+
+            <RadioButton
+                android:id="@+id/rdButtonHoraTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Todos os Horários"
+                android:textColor="#FF0000" />
+
+            <RadioButton
+                android:id="@+id/rdButtonHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horário Específico"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/txtOpHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:singleLine="true"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnBuscarMenu"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/groupRadio4"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/side_nav_bar"
+            android:text="Aplicar Filtros"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</ScrollView>

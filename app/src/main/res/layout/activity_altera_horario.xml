@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amphora.activities.AlteraHorarioActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/groupRadio1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/groupRadio2"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:padding="10px">
+
+                    <TextView
+                        android:id="@+id/textoNomeHor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textoHor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/TextViewObs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/TextView01"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/textoCrmHor"
+                        android:layout_marginTop="10dp"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/groupRadio2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/groupRadio1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:padding="10px">
+
+                    <Spinner
+                        android:id="@+id/diaEscolhido"
+                        android:layout_width="165dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_btn_breaker_bay" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/groupRadio2"
+                        android:layout_below="@+id/groupRadio1"
+                        android:layout_marginTop="10dp"
+                        android:text="Horário Novo Manhã"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/manha1"
+                        style="@style/btnStyleBreakerBay"
+                        android:layout_width="52dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="11dp" />
+
+                    <Spinner
+                        android:id="@+id/manha2"
+                        style="@style/btnStyleBreakerBay"
+                        android:layout_width="52dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="-38.5dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="-34dp"
+                        android:layout_weight="1.04"
+                        android:text="Manhã" />
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/groupRadio2"
+                        android:layout_below="@+id/groupRadio1"
+                        android:layout_marginTop="10dp"
+                        android:text="Horário Novo Tarde"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/tarde1"
+                        style="@style/btnStyleBreakerBay"
+                        android:layout_width="52dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="11dp" />
+
+                    <Spinner
+                        android:id="@+id/tarde2"
+                        style="@style/btnStyleBreakerBay"
+                        android:layout_width="52dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="-38.5dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="-34dp"
+                        android:text="Tarde" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Observações"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/obsNovo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:autoText="false"
+                        android:singleLine="true"
+                        android:background="@drawable/edit_text_style"
+                        android:ems="10"
+                        android:focusableInTouchMode="true" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/groupRadio3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/groupRadio2"
+                    android:layout_below="@+id/groupRadio2"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="10px">
+
+                    <Button
+                        android:id="@+id/buttonAlteraHor"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.01"
+                        android:background="@drawable/side_nav_bar"
+                        android:text="Alterar"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/ButtonExcluirHor"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.01"
+                        android:background="@drawable/side_nav_bar"
+                        android:text="Excluir"
+                        android:textColor="#FFFFFF" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

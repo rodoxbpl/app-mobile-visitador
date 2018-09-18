@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amphora.activities.DetalhesMaterialActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textoNome"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textoCrm"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Material Divulgado"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#696969" />
+
+            <TextView
+                android:id="@+id/textoMaterial"
+                style="@style/CodeFont"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.41"
+                android:scrollbars="vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#B22222" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/matDivulgado"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginBottom="10dp"
+                android:autoText="false"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/buttonIncluiMat"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/side_nav_bar"
+                android:text="Incluir Material"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

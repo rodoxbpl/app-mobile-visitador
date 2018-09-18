@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text2"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="68dp"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorButtonNormal"
+    android:shadowColor="#000000"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:shadowRadius="0.6"
+    android:singleLine="true"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />

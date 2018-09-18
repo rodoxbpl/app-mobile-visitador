@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amphora.activities.NovosHorariosActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="#F8F8F8"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <RadioGroup
+                android:id="@+id/groupRadio1N"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:padding="10px">
+
+                <TextView
+                    android:id="@+id/textoNomeHorN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/groupRadio2N"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/groupRadio1N"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="10px">
+
+                <Spinner
+                    android:id="@+id/diaEscolhidoN"
+                    style="@style/btnStyleBreakerBay"
+                    android:layout_width="165dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/TextView01N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/groupRadio2N"
+                    android:layout_below="@+id/groupRadio1N"
+                    android:layout_marginTop="10dp"
+                    android:text="Horário Manhã"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/manha1N"
+                    style="@style/btnStyleBreakerBay"
+                    android:layout_width="52dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="11dp" />
+
+                <Spinner
+                    android:id="@+id/manha2N"
+                    style="@style/btnStyleBreakerBay"
+                    android:layout_width="52dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="-38.5dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox1N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="-34dp"
+                    android:layout_weight="1.04"
+                    android:text="Manhã" />
+
+                <TextView
+                    android:id="@+id/TextView03N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/groupRadio2N"
+                    android:layout_below="@+id/groupRadio1N"
+                    android:layout_marginTop="10dp"
+                    android:text="Horário Tarde"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/tarde1N"
+                    style="@style/btnStyleBreakerBay"
+                    android:layout_width="52dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="11dp" />
+
+                <Spinner
+                    android:id="@+id/tarde2N"
+                    style="@style/btnStyleBreakerBay"
+                    android:layout_width="52dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="-38.5dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="-34dp"
+                    android:text="Tarde" />
+
+                <TextView
+                    android:id="@+id/TextView02N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Observações"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/obsNovoN"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:autoText="false"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:focusableInTouchMode="true" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/groupRadio3N"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/groupRadio2N"
+                android:layout_below="@+id/groupRadio2N"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="10px">
+
+                <Button
+                    android:id="@+id/buttonIncluiHorN"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.01"
+                    android:background="@drawable/side_nav_bar"
+                    android:text="Incluir"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

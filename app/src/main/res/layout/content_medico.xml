@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.amphora.drawer.MainDrawerAg"
+    tools:showIn="@layout/app_bar_medico">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp">
+
+            <EditText
+                android:id="@+id/nomeMedico2"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="0.89"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="Nome do médico"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnBuscarMedico"
+                style="@android:style/Widget.Holo.Light.Button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/nomeMedico2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="22dp"
+                android:background="?android:attr/actionModeWebSearchDrawable" />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/listMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="420dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="2dp"
+            android:paddingLeft="2dp"></ListView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

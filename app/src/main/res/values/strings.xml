@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Visitadores</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Filtro</string>
+    <string name="tittle_activity_main_drawer_ag">Agenda</string>
+    <string name="tittle_activity_drawer_medico">Médico</string>
+    <string name="tittle_activity_drawer_material">Material</string>
+    <string name="tittle_activity_menu">Filtro Agenda</string>
+</resources>
